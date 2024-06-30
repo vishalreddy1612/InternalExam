@@ -1,0 +1,11 @@
+For Backend .env 
+=========================
+MONGODBURL="mongodb+srv://fsd04.2hxrdca.mongodb.net/realgrande?retryWrites=true&w=majority"
+DBUSERNAME=procareer3
+DBPASSWORD=ISobjBDohsFqEAqg
+FRONTENDURI="http://<EC2-Public-IP>"
+
+For Frontend .env
+============================
+
+REACT_APP_BACKEND_URL="http://44.203.169.59:2001/api"
