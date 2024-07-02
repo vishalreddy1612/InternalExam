@@ -8,5 +8,5 @@ def lambda_handler(event, context):
     json_object = s3_client.get_object(Bucket=bucket,Key=json_file_name)
     jsonFileReader = json_object['Body'].read()
     jsonDict = json.loads(jsonFileReader)
-    table = dynamodb.Table('employees')
+    table = dynamodb.Table('kmit')
     table.put_item(Item=jsonDict)
